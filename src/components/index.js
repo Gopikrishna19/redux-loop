@@ -20,6 +20,7 @@ export class Page extends React.Component {
 
     return (
       <div className="page">
+        <h1>Parts & Miscellaneous</h1>
         <Items
           {...this.props.actions}
           items={this.props.parts}

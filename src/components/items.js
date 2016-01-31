@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Item from './item';
+import ItemsHeader from './items-header';
 
 export default function Items(
   {
@@ -15,14 +16,10 @@ export default function Items(
   return (
     <div className="items">
       <h2>{title}</h2>
-      <div>
-        <input
-          type="checkbox"
-          checked={allSelected}
-          onChange={() => toggleAll(!allSelected, type)}
-        />
-        <strong>Description</strong>
-      </div>
+      <ItemsHeader
+        selectAll={allSelected}
+        onToggleAll={() => toggleAll(!allSelected, type)}
+      />
       {
         items.map(
           (item, index) =>

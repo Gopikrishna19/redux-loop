@@ -2,3 +2,46 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #EEE;
+
+  .page {
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+
+    .items {
+      background-color: #FFF;
+      box-shadow: 0 1px 2px 2px #DDD;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      h2 {
+        margin: 0;
+      }
+
+      .item, .item-header {
+        display: flex;
+
+        > * {
+          padding: 5px 0;
+        }
+
+        .desc {
+          flex-basis: 40%;
+        }
+
+        .due-date, .amount-owed, .pay-amount {
+          flex-basis: 20%;
+        }
+      }
+
+      .item-header {
+        font-weight: bold;
+        border-bottom: 1px solid #EEE;
+        margin: 5px 0;
+      }
+    }
+  }
+}
