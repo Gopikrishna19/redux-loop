@@ -1,11 +1,8 @@
 function setData(state, {data}) {
-  return {
-    parts: data.parts,
-    miscItems: data.miscItems
-  };
+  return data;
 }
 
-const defaultReducer = items => items;
+const defaultReducer = state => state;
 const reducers = {
   SET_DATA: setData
 };
