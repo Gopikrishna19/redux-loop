@@ -8,7 +8,7 @@ export default function ItemsHeader(
 ) {
 
   return (
-    <div className="item-header">
+    <div className="items-header">
       <div className="desc">
         <input
           type="checkbox"
